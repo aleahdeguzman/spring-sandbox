@@ -1,0 +1,8 @@
+Developer: Frances Aleah De Guzman
+Location: Sydney
+Email: aleah_deguzman@yahoo.com
+
+SpringDeclarativeTxn:
+This project uses the basic Spring JDBCTemplate with Declarative Transaction Management.
+Two approaches are shown via the normal bean configuration where you explicitly define
+AOP and the other is via annotations.
