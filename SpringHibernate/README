@@ -1,0 +1,8 @@
+Developer: Frances Aleah De Guzman
+Location: Sydney
+Email: aleah_deguzman@yahoo.com
+
+SpringHibernate:
+This project shows how to integrate Hibernate with Spring. Entity object were defined using
+annotations. Declartive Transaction Management is also used in the service layer.
+Database used - Apache Derby.
