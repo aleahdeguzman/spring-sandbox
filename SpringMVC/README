@@ -1,0 +1,15 @@
+Developer: Frances Aleah De Guzman
+Location: Sydney
+Email: aleah_deguzman@yahoo.com
+
+SpringMVC:
+This project demonstrates a simple implementation of Spring MVC. It also showcases RESTful
+way of request parameter binding.
+
+Use Cases:
+1. Add student
+2. Get student by id
+3. List all students.
+
+Dependent Project: SpringDeclarativeTxn
+Database: Apache Derby

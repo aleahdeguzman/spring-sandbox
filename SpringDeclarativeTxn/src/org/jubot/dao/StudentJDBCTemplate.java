@@ -30,7 +30,7 @@ public class StudentJDBCTemplate implements StudentDAO {
 	  		
 	    	sql = null;
 	    	params = null;
-	    	sql = "INSERT INTO Subject (studNo, subj_names) VALUES (?, ?)";
+	    	sql = "INSERT INTO Subject (studNo, subj_name) VALUES (?, ?)";
 	    	params = new Object[] {student.getStudentNo(), student.getSubject()};
 	    	jdbcTemplateObject.update(sql, params);
 	     
