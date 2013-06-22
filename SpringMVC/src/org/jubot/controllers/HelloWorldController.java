@@ -22,6 +22,8 @@ public class HelloWorldController {
 		
 		model.addAttribute("serverTime", formatter.format(date));
 		
+		
+		
 		return "helloWorld";
 	}
 	
