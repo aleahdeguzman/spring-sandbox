@@ -3,7 +3,6 @@ package org.jubot.hibernate;
 import java.util.List;
 
 import org.hibernate.Criteria;
-import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.jubot.interfaces.StudentDAO;
