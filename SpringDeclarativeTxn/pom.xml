@@ -27,7 +27,10 @@
   <properties>
 		<spring.version>3.2.3.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
-		<jdk.version>1.6</jdk.version>
+		<derby.version>10.10.1.1</derby.version>
+		<dbcp.version>1.4</dbcp.version>
+		<connpool.version>1.6</connpool.version>
+		<logging.version>1.2.17</logging.version>
 	</properties>
  
 	<dependencies>
@@ -60,34 +63,34 @@
 		<dependency>
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derby</artifactId>
-			<version>10.10.1.1</version>
+			<version>${derby.version}</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derbyclient</artifactId>
-			<version>10.10.1.1</version>
+			<version>${derby.version}</version>
 		</dependency>
          
         <!-- Commons DBCP -->
         <dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
-			<version>1.4</version>
+			<version>${dbcp.version}</version>
 		</dependency>
 		
 		<!-- Commons Pool -->
 		<dependency>
 			<groupId>commons-pool</groupId>
 			<artifactId>commons-pool</artifactId>
-			<version>1.6</version>
+			<version>${connpool.version}</version>
 		</dependency>
         
         <!-- Log4j -->  
         <dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
+			<version>${logging.version}</version>
 		</dependency>
             
         
