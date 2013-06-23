@@ -6,6 +6,7 @@ import static org.junit.Assert.assertNotNull;
 import org.jubot.dao.StudentJDBCTemplate;
 import org.jubot.models.Student;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -35,6 +36,7 @@ public class StudentJDBCTemplateTest extends AbstractTransactionalJUnit4SpringCo
 		expectedStudent = this.applicationContext.getBean("stubStudent",Student.class);
 		System.out.println("Student to test: " + expectedStudent.getName());
 	}
+	
 	
 	@Test
 	public void testGetStudentById() {
