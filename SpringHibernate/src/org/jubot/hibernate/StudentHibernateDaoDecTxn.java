@@ -69,7 +69,8 @@ public class StudentHibernateDaoDecTxn implements StudentDAO{
 		
 		try {
 			
-			this.getSessionFactory().getCurrentSession().delete(student);
+			this.getSessionFactory().getCurrentSession().delete(this.getSessionFactory().
+					getCurrentSession().load(Student.class, student.getStudentNo()));
 			
 		} catch (DataAccessException e) {
 			throw e;

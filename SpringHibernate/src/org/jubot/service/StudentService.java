@@ -17,11 +17,17 @@ public class StudentService {
 	
 	@Transactional
 	public void deleteStudent(Student student) throws Exception {
+		if(student == null) {
+			throw new Exception("Student cannot be null.");
+		}
 		studentHibernateDaoDecTxn.delete(student);
 	}
 	
 	@Transactional
 	public void saveStudent(Student student) throws Exception {
+		if(student == null) {
+			throw new Exception("Student cannot be null.");
+		}
 		studentHibernateDaoDecTxn.save(student);
 	}
 	

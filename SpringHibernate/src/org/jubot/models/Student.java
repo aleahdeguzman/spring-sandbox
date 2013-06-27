@@ -33,6 +33,7 @@ public class Student {
 
 	public void setSubject(Subject subject) {
 		this.subject = subject;
+		this.subject.setStudNo(this.getStudentNo());
 	}
 
 	public String getType() {
