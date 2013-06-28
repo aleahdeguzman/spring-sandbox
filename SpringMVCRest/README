@@ -1,0 +1,12 @@
+Developer: Frances Aleah De Guzman
+Location: Sydney
+Email: aleah_deguzman@yahoo.com
+
+SpringMVCRest:
+This project shows how to send requests in RESTful way using SpringMVC with the help of
+AJAX and JQuery. It also uses the project SpringHibernate as the data access component.
+
+Use cases:
+1. Fetch student list.
+2. Show student details without submitting the actual form.
+3. Add and Delete students without submitting the actual form.
