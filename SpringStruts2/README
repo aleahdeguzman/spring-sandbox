@@ -1,0 +1,7 @@
+Developer: Frances Aleah De Guzman
+Location: Sydney
+Email: aleah_deguzman@yahoo.com
+
+SpringStruts2:
+Just a simple example on how to integrate Strut2 with Spring. Let Spring do the 
+dependency injection of the Action classes via the struts-spring plugin.

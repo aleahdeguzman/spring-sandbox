@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>spring-sandbox</groupId>
+    <artifactId>SpringStruts2</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <name>SpringStruts2</name>
+    
+    <build>
+		<finalName>SpringStruts2</finalName>
+		<resources>
+      		<resource>
+        		<directory>src/main/java</directory>
+       			<includes>
+					<include>struts.xml</include>
+				</includes>
+				<filtering>true</filtering>
+      		</resource>
+    	</resources>
+		<plugins>
+			 <plugin>
+        		<groupId>org.apache.tomcat.maven</groupId>
+        		<artifactId>tomcat7-maven-plugin</artifactId>
+        		<version>2.1</version>
+      	</plugin>
+		</plugins>
+	</build>
+
+    <properties>
+		<spring.version>3.2.3.RELEASE</spring.version>
+		<struts.version>2.3.15</struts.version>
+		<junit.version>4.11</junit.version>
+	</properties>
+
+    <dependencies>
+       
+        <!-- Struts 2 -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+	        <artifactId>struts2-core</artifactId>
+	        <version>${struts.version}</version>
+        </dependency>
+ 
+		<!-- Spring 3 dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>	
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>	
+		
+        <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+ 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	 
+		<!-- Struts 2 + Spring plugins -->
+		<dependency>
+	         <groupId>org.apache.struts</groupId>
+		     <artifactId>struts2-spring-plugin</artifactId>
+		     <version>${struts.version}</version>
+	     </dependency>
+    </dependencies>
+
+     
+
+</project>
